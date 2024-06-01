@@ -1,0 +1,238 @@
+/* estilos.css */
+/*Etilos para el cuerpo de la pagina*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #333;
+}
+/*Estilos para los titulos o subtitulos*/
+h1, h2, p {
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #00796b;
+}
+
+h2 {
+    color: #004d40;
+}
+
+p {
+    text-align: justify;
+    margin: 20px;
+}
+/*animacion para las imagenes*/
+img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    color: #004999;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container img {
+    flex: 1;
+    max-width: 250px;
+    margin: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.container div {
+    flex: 2;
+    max-width: 600px;
+    text-align: left;
+    margin: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+/*Etilo para el footer del final de pagina*/
+footer {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.center-img img {
+    width: 150px;
+    height: 100px;
+}
+/*Animaciones generales*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* estilos.css */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes rotateIn {
+    from { transform: rotate(-360deg); opacity: 0; }
+    to { transform: rotate(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+/* las demas animaciones*/
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+p.intro {
+    animation: slideIn 1.5s ease-out;
+}
+
+.center-img img {
+    animation: scaleUp 1.5s ease-in-out;
+}
+
+h2 {
+    animation: rotateIn 2s ease-in;
+}
+
+a {
+    animation: bounce 2s infinite;
+}
+/* estilos.css */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes rotateIn {
+    from { transform: rotate(-360deg); opacity: 0; }
+    to { transform: rotate(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+@keyframes listItemFadeIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes containerSlideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+p.intro {
+    animation: slideIn 1.5s ease-out;
+}
+
+.center-img img {
+    animation: scaleUp 1.5s ease-in-out;
+}
+
+h2 {
+    animation: rotateIn 2s ease-in;
+}
+
+a {
+    animation: bounce 2s infinite;
+}
+
+ol > li {
+    animation: listItemFadeIn 1s ease-in-out;
+}
+
+.container {
+    animation: containerSlideUp 1.5s ease-in-out;
+}
+
+@keyframes rotacion {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
